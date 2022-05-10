@@ -132,7 +132,7 @@ appendData <- function(data){
 }
 
 observeEvent(input$add_button, priority = 20,{
-    
+    reset("entry_form") # to work more than once
     entry_form("submit")
   
 })
